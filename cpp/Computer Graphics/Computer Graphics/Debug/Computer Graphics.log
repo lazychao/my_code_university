@@ -1,0 +1,14 @@
+﻿cl : 命令行 warning D9025: 正在重写“/sdl”(用“/GS-”)
+  样例2.cpp
+c:\users\dell\source\repos\computer graphics\computer graphics\样例2.cpp(22): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: 参见“scanf”的声明
+c:\users\dell\source\repos\computer graphics\computer graphics\样例2.cpp(27): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: 参见“scanf”的声明
+c:\users\dell\source\repos\computer graphics\computer graphics\样例2.cpp(132): warning C4305: “+=”: 从“double”到“GLfloat”截断
+c:\users\dell\source\repos\computer graphics\computer graphics\样例2.cpp(137): warning C4305: “-=”: 从“double”到“GLfloat”截断
+c:\users\dell\source\repos\computer graphics\computer graphics\样例2.cpp(142): warning C4305: “-=”: 从“double”到“GLfloat”截断
+c:\users\dell\source\repos\computer graphics\computer graphics\样例2.cpp(147): warning C4305: “+=”: 从“double”到“GLfloat”截断
+  贝塞尔曲线.cpp
+  随便写写.cpp
+  正在生成代码...
+  Computer Graphics.vcxproj -> C:\Users\Dell\source\repos\Computer Graphics\Debug\Computer Graphics.exe

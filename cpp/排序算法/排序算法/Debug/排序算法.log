@@ -1,0 +1,5 @@
+﻿cl : 命令行 warning D9025: 正在重写“/sdl”(用“/GS-”)
+  归并排序.cpp
+  快速排序.cpp
+  正在生成代码...
+  排序算法.vcxproj -> C:\Users\Dell\source\repos\排序算法\Debug\排序算法.exe
