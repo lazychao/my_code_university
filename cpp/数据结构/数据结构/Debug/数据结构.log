@@ -1,6 +1,0 @@
-﻿cl : 命令行 warning D9025: 正在重写“/sdl”(用“/GS-”)
-  test_BST.cpp
-  随便.cpp
-  正在生成代码...
-c:\users\dell\source\repos\数据结构\数据结构\随便.cpp(18): warning C4700: 使用了未初始化的局部变量“pTree”
-  数据结构.vcxproj -> C:\Users\Dell\source\repos\数据结构\Debug\数据结构.exe
