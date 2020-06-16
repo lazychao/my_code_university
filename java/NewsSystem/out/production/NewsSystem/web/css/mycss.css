@@ -1,0 +1,52 @@
+/* 适应于不同的屏幕自动调整窗口大小*/
+@media screen and (max-width:768px){
+    .container{
+        width:100%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px){
+    .container{
+        width:750px;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+    .container{
+        width:970px;
+    }
+}
+@media screen and (min-width:1200px){
+    .container{
+        width:1170px;
+    }
+}
+#header_bar{
+    height: 68px;
+    background:#1c5ec0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#header_bar .container{
+    padding-top: 20px;
+}
+.nav_button{
+    font-size: small;
+    color:white;
+   
+}
+#presentation_area{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#admin_bar{
+    background-color: #f0f0f0;
+    padding-top: 30px;
+    height: 900px;
+}
+#admin_bar .nav{
+    font-size: 16px;
+}
+.tab-content{
+    padding-top:20px;
+}

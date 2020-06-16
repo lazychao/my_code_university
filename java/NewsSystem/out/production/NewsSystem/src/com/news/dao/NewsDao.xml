@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.news.dao.NewsDao">
+	<!-- 查询管理员账户是否存在 -->
+	<insert id="insertNews"  >
+	   insert into ${section_id} (id_news,
+   							date_time,
+    						news_title,
+    						img_path,
+    						content
+    						)
+    					values (#{news.id_news},
+   							#{news.date_time},
+    						#{news.news_title},
+    						#{news.img_path},
+    						#{news.content}
+    						)
+	</insert>
+	<select id="queryAllNews"  resultType="com.news.domain.News">
+	   SELECT * FROM ${section_id}
+	</select>
+	<select id="queryTotal"  resultType="int">
+	   SELECT total FROM sections where section_id=#{section_id}
+	</select>
+	<select id="checkTitle"  resultType="com.news.domain.News" >
+	   SELECT * FROM ${section_id} where news_title=#{news_title}
+	</select>
+	<update id="updateTotal" >
+		update sections set total=#{total} where section_id=#{section_id}
+	</update>
+	<select id="queryPage" resultType="com.news.domain.News">
+	   SELECT * from ${section_id} where id_news BETWEEN #{begin} and #{end} order by id_news desc;
+
+	</select>
+	<delete id="deleteNewsById" >
+		delete from ${section_id} where id_news = #{id_news}
+	</delete>
+	<update id="updateNews_id">
+		update ${section_id} set id_news=id_news-1 where id_news>#{id_news}
+	</update>
+	<select id="queryNewsById" resultType="com.news.domain.News">
+		 SELECT * FROM ${section_id} where id_news=#{id_news}
+	</select>
+	<update id="updateNewsById" >
+		update ${section_id} set news_title=#{news_title},content=#{content} where id_news=#{id_news}
+	</update>
+</mapper>

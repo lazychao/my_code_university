@@ -1,0 +1,47 @@
+.goods_list{
+	background: white;
+	margin: 10px;
+	border: 1px solid #ECECEC;
+	padding: 15px 10px 5px 10px;
+	height: 800px;
+}
+.goods_list ul{
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+.goods_list .title_ul{
+	height: 50px;
+	line-height: 50px;
+}
+.goods_list ul li{
+	flex: 1;
+	text-align: center;
+	border:1px solid #ECECEC;
+}
+.goods_list img{
+	width: 60px;
+	height: 60px;
+}
+.goods_list ul li:last-child{
+	border-right: none;
+}
+
+
+ .goods_list ul li:nth-child(3){
+	flex: 3;
+}
+.goods_list{
+	min-width: 300px;
+}
+
+.main_top{
+	min-width: 300px;
+}
+
+.main_top{
+	background: white;
+	margin: 10px;
+	border: 1px solid #ECECEC;
+	padding: 10px;
+}

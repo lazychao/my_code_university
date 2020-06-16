@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.news.dao.SectionDao">
+
+	<select id="getSections"  resultType="com.news.domain.Section">
+	   SELECT * FROM sections order by total desc;
+	</select>
+	<select id="checkSection">
+		SELECT section_id FROM sections where section_id =#{section_id}
+	</select>
+	<select id="querySection" resultType="String">
+		SELECT section_id FROM sections where section_name=#{section_name} or section_id =#{section_id}
+	</select>
+	<update id="createNewSectionTable" parameterType="String">
+		CREATE table ${section_id}(
+					    id_news              int not null,
+   						date_time             date not null comment '日期',
+   						news_title           text not null,
+   						img_path             varchar(30),
+   						content              text not null,
+   						primary key (id_news)
+		)
+	</update>
+	<update id="insertNewSectionToSections">
+		   insert into sections (section_id,
+   							total,
+    						section_name
+    						)
+    					values (#{section_id},
+   							0,
+    						#{section_name}
+    						)
+	</update>
+	<update id="deleteSectionTable">
+			drop table ${section_id}
+	</update>
+	<delete id="deleteSectionInSections">
+			delete from sections where section_id = #{section_id}
+	</delete>
+	<update id="updateSectionName">
+			update sections set section_name=#{newSection_name} where section_name=#{oldSection_name}
+	</update>
+</mapper>
